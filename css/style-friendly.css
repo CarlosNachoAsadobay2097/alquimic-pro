@@ -225,6 +225,42 @@ Hero BG C-6
 
 /* -------------------------------------------
 
+Imagenes enlases
+
+------------------------------------------- */
+.topic-card[data-bg-image="img_1.jpg"] {
+    background-image: url('/img/enlases/img_1.jpg') !important;
+}
+
+.topic-card[data-bg-image="img_2.jpg"] {
+    background-image: url('/img/enlases/img_2.jpg') !important;
+}
+
+.topic-card[data-bg-image="img_3.jpg"] {
+    background-image: url('/img/enlases/img_3.jpg') !important;
+}
+
+.topic-card[data-bg-image="img_4.jpg"] {
+    background-image: url('/img/enlases/img_4.jpg') !important;
+}
+
+.topic-card[data-bg-image="img_5.jpg"] {
+    background-image: url('/img/enlases/img_5.jpg') !important;
+}
+
+.topic-card[data-bg-image="img_6.jpg"] {
+    background-image: url('/img/enlases/img_6.jpg') !important;
+}
+
+.topic-card[data-bg-image="img_7.jpg"] {
+    background-image: url('/img/enlases/img_7.jpg') !important;
+}
+
+.topic-card[data-bg-image="img_8.jpg"] {
+    background-image: url('/img/enlases/img_8.jpg') !important;
+}
+/* -------------------------------------------
+
 Objetivos
 
 ------------------------------------------- */
