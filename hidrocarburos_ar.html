@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/fontawesome.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- okai css -->
+    <link rel="stylesheet" href="css/style-friendly.css">
+    <!-- page title -->
+     
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Pestaña Microscopio -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='16' cy='32' r='6' fill='%23FEAF62'/><circle cx='48' cy='32' r='6' fill='%23FEAF62'/><circle cx='32' cy='16' r='6' fill='%23FEAF62'/><line x1='22' y1='32' x2='42' y2='32' stroke='%23FEAF62' stroke-width='4'/><line x1='32' y1='22' x2='32' y2='10' stroke='%23FEAF62' stroke-width='4'/></svg>">
+    
+
+
+    <!-- Cargar AR-->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@latest/dist/aframe-extras.min.js"></script> <!-- Soporte extra -->
+
+
+
+    <title>Alquimic Pro</title>
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div id="smooth-wrapper" class="mil-page-wrapper"></div>
+    <!-- wrapper end -->
+
+                <!-- content -->
+                <div id="smooth-content" class="mil-content">
+
+    <!-- fixed elements -->
+    <div class="mil-fixed">
+        <div class="mil-top-panel">
+          <div class="mil-left-side">
+            <a href="index.html" class="mil-logo mil-scroll-to" id="logoLink">
+              <i class="fa-solid fa-flask-vial"></i>
+              <span>Alquimic Pro</span>
+            </a>
+  
+          </div>
+          <div class="mil-buttons-tp-frame mil-c-gone">
+            <div class="mil-buttons">
+              <div class="mil-tp-btn">
+                <div class="mil-menu-btn"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mil-menu-frame">
+          <div class="mil-menu-window">
+            <div class="mil-menu-section mil-inner-scroll" id="swupMenu">
+              <ul class="mil-main-menu mil-c-gone">
+                <li class="mil-has-children">
+                  <a href="#.">Realidad Aumentada</a>
+                  <ul>
+                    <li><a href="#.html">Introdución a la Química Orgánica</a></li>
+                    <li><a href="alcanos_AR.html">Alcanos</a></li>
+                    <li><a href="alquenos_AR.html">Alquenos</a></li>
+                    <li><a href="alquinos_AR.html">Alquinos</a></li>
+                    <li><a href="aromaticos_AR">Aromativos</a></li>
+                    <li><a href="alcoholes_AR.html">Alcoholes</a></li>
+                    <li><a href="fenoles_AR">Fenoles</a></li>
+                    <li><a href="et">Eters</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fixed elements end -->
+
+
+
+                            <!-- Contenedor para la Realidad Aumentada -->
+                            <div id="ar-container">
+                                <a-scene mindar-image="imageTargetSrc: ./target/targets.mind;" 
+                                        color-space="sRGB" 
+                                        renderer="colorManagement: true, physicallyCorrectLights"
+                                        vr-mode-ui="enabled: false"
+                                        device-orientation-permission-ui="enabled: false">
+                                    
+                                    <!-- Sección de Assets -->
+                                    <a-assets>
+                                        <a-asset-item id="modelo3D" src="./models/Actividad_Hidrocarburos.gltf"></a-asset-item>
+                                    </a-assets>
+
+                                    <!-- Cámara -->
+                                    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+                                    <!-- Target de AR -->
+                                    <a-entity mindar-image-target="targetIndex: 0">
+                                        <a-entity animation-mixer>
+                                            <a-gltf-model src="#modelo3D"
+                                                        position="0 0 0" 
+                                                        rotation="0 180 0" 
+                                                        scale="1 1 1">
+                                            </a-gltf-model>
+                                        </a-entity>
+                                    </a-entity>
+
+                                </a-scene>
+
+                                <!-- Botón para reproducir el audio -->
+                                <div class="audio-button-container">
+                                    <button id="playButton" onclick="playAudio()">Presiona para escuchar</button>
+                                </div>
+                                
+                                <!-- Audio -->
+                                <audio id="audio" src="./audio/hidrocarburos.mp3"></audio> <!-- Reemplaza con la URL de tu archivo de audio -->
+                                <script>
+                                    // Espera a que el DOM esté completamente cargado
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                        var playButton = document.getElementById('playButton');
+                                        var audio = document.getElementById('audio');
+                                
+                                        // Añadir el evento click al botón
+                                        playButton.addEventListener('click', function () {
+                                            audio.play();
+                                        });
+                                    });
+                                </script>
+                            </div>
+
+
+
+
+
+                <!-- footer -->
+                <footer class="mil-footer mil-p-160-160">
+                  <div class="container">
+                    <div class="row mil-no-g">
+                      <div class="col-lg-12">
+                        <div class="mil-footer-bottom mil-up">
+                          <p class="mil-text-sm">©2025. All rights reserved.</p>
+                          <!-- <p class="mil-text-sm">Design by: <a
+                              href="https://themeforest.net/user/millerdigitaldesign/portfolio"
+                              class="mil-text-link mil-a2 mil-c-gone">Nazar Miller</a></p>
+                          <p class="mil-text-sm">Modify by: <a href="https://nachitogames.netlify.app/"
+                              class="mil-text-link mil-a2 mil-c-gone">NG Industry</a></p> -->
+                          <p class="mil-text-sm">Created by: <a href="https://nachitogames.netlify.app/"
+                              class="mil-text-link mil-a2 mil-c-gone">Alison Velastegui</a></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </footer>
+                <!-- footer end -->   
+
+                </div>
+                <!-- content -->
+
+
+
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- gsap js -->
+    <script src="js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="js/plugins/ScrollSmoother.min.js"></script>
+    <!-- scroll trigger js -->
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="js/plugins/ScrollTo.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- parallax js -->
+    <script src="js/plugins/parallax.js"></script>
+      
+    <!-- pixy js -->
+    <script src="js/main.js"></script>
+
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

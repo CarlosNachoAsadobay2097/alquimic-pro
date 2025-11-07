@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Cargar fuentes y estilos -->
+  <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/plugins/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/style-friendly.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='16' cy='32' r='6' fill='%23FEAF62'/><circle cx='48' cy='32' r='6' fill='%23FEAF62'/><circle cx='32' cy='16' r='6' fill='%23FEAF62'/><line x1='22' y1='32' x2='42' y2='32' stroke='%23FEAF62' stroke-width='4'/><line x1='32' y1='22' x2='32' y2='10' stroke='%23FEAF62' stroke-width='4'/></svg>" />
+
+  <!-- Cargar AR -->
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@latest/dist/aframe-extras.min.js"></script>
+
+  <!-- Cargar Bootstrap y Swiper -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Título de la página -->
+  <title>Alquimic Pro</title>
+</head>
+
+
+<body>
+
+  <!-- wrapper -->
+  <div id="smooth-wrapper" class="mil-page-wrapper">
+
+    <div id="swup-opm"></div>
+
+    <!-- cursor -->
+    <div class="mil-cursor-follower"></div>
+    <!-- cursor end -->
+
+    <!-- preloader -->
+    <div class="mil-preloader">
+      <div class="mil-preloader-animation">
+        <div class="mil-pos-abs mil-animation-1">
+          <p class="mil-head1 mil-m1">Aprende</p>
+          <p class="mil-head1 mil-a2">Química</p>
+          <p class="mil-head1 mil-m1">Orgánica</p>
+        </div>
+        <div class="mil-pos-abs mil-animation-2">
+          <div class="mil-reveal-frame">
+            <p class="mil-reveal-box"></p>
+            <p class="mil-head1 mil-m1">AlquimicPro.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- scroll progress -->
+    <div class="mil-progress-track">
+      <div class="mil-progress"></div>
+    </div>
+    <!-- scroll progress end -->
+
+    <!-- fixed elements -->
+    <div class="mil-fixed">
+      <div class="mil-top-panel">
+        <div class="mil-left-side">
+          <a href="index.html" class="mil-logo mil-scroll-to" id="logoLink" >
+            <i class="fa-solid fa-flask-vial"></i>
+            <span>Alquimic Pro</span>
+          </a>
+
+        </div>
+        <div class="mil-buttons-tp-frame mil-c-gone">
+          <div class="mil-buttons">
+            <div class="mil-tp-btn">
+              <div class="mil-menu-btn"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mil-menu-frame">
+        <div class="mil-menu-window">
+          <div class="mil-menu-section mil-inner-scroll" id="swupMenu">
+            <ul class="mil-main-menu mil-c-gone">
+              <li class="mil-has-children">
+                <a href="#.">Unidad 1</a>
+                <ul>
+                  <li><a href="/quimicaorganica.html" class="" data-no-swup>Tema 1: Introdución a la Química Orgánica</a></li>
+                  <li><a href="/alcanos.html" class="" data-no-swup>Tema 2: Alcanos</a></li>
+                  <li><a href="/alquenos.html" class="" data-no-swup>Tema 3: Alquenos</a></li>
+                  <li><a href="/alquinos.html" class="" data-no-swup>Tema 4: Alquinos</a></li>
+                  <li><a href="/aromaticos.html" class="" data-no-swup>Tema 5: Aromáticos</a></li>
+                </ul>
+              </li>
+              <li class="mil-has-children">
+                <a href="#.">Unidad 2</a>
+                <ul>
+                  <li><a href="alcoholes.html" class="" data-no-swup>Tema 1: Alcoholes</a></li>
+                  <li><a href="fenoles.html" class="" data-no-swup>Tema 2: Fenoles</a></li>
+                  <li><a href="eteres.html" class="" data-no-swup>Tema 3: Eteres</a></li>
+                </ul>
+              </li>
+              <li class="mil-has-children">
+                <a href="#.">Realidad Aumentada</a>
+                <ul>
+                  <li><a href="hidrocarburos_AR.html">Introdución a la Química Orgánica</a></li>
+                  <li><a href="alcanos_AR.html">Alcanos</a></li>
+                  <li><a href="alquenos_AR.html">Alquenos</a></li>
+                  <li><a href="alquinos_AR.html">Alquinos</a></li>
+                  <li><a href="aromaticos_AR.html">Aromaticos</a></li>
+                  <li><a href="alcoholes_AR.html">Alcoholes</a></li>
+                  <li><a href="fenoles_AR.html">Fenoles</a></li>
+                  <li><a href="eteres_AR.html">Eteres</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- fixed elements end -->
+
+    <!-- page transition -->
+    <div class="mil-transition-fade" id="swup">
+      <div class="mil-transition-frame">
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+
+          <!-- hero -->
+          <div class="mil-hero-1 mil-up" id="top">
+            <div class="container mil-hero-main mil-relative mil-aic">
+              <div class="mil-hero-text mil-scale-img" data-value-1="1.3" data-value-2="0.95">
+                <div class="mil-text-pad"></div>
+                <br>
+                <br>
+                <div class="logo-hero">
+                  <img src="img/shapes/logo_U.png" alt="Logo_Unach">
+                </div>
+                <div class="carrera-facultad">
+                  <h2 class="mil-head6 mil-rubber  mil-m2">FACULTAD DE CIENCIAS DE LA EDUCACIÓN, HUMANAS Y TECNOLOGÍAS</h2>
+                  <h2 class="mil-head4 mil-rubber  mil-m2">Carrera de Pedagogía de las Ciencias Experimentales Química y Biología</h2>
+                </div>
+                <br>
+                <div class="mil-word-frame">
+                  <div class="mil-c-container">
+                    <h1 class="mil-display1 mil-rubber">Alquimi <span class="mil-c">c</span></h1>
+                    <div class="mil-bg"></div> <!-- Fondo detrás de la C -->
+                  </div>
+                  <div class="mil-s-4"><img src="img/shapes/4.png" alt="shape"></div>
+                </div>
+
+                <!-- <div class="mil-word-frame">
+                                    <h1 class="mil-display1 mil-rubber">
+                                        Alquimi<span class="mil-c-container"> c<img src="img/shapes/c-6.png" alt="shape" class="mil-c-bg"></span>
+                                    </h1>
+                                </div> -->
+                <div class="mil-word-frame mil-mb60">
+                  <h1 class="mil-display1 mil-rubber">Pro</h1>
+                  <div class="mil-s-5"><img src="img/shapes/5.png" alt="shape"></div>
+                </div>
+                <p class="mil-stylized mil-m2">Plataforma digital Educativa como recurso didáctico interactivo</p>
+                <br>
+                <p class="mil-m3">Elaborado por:</p>
+                <p class="mil-stylized mil-m2">Alison Velastegui</p>
+              </div>
+              <div class="mil-shapes mil-scale-img" data-value-1=".7" data-value-2="1.11">
+                <div class="mil-s-1"><img src="img/shapes/1.png" alt="shape"></div>
+                <div class="mil-s-2"><img src="img/shapes/2.png" alt="shape"></div>
+                <div class="mil-s-3"><img src="img/shapes/3.png" alt="shape"></div>
+              </div>
+            </div>
+
+            <!-- Mascota e imagen Química-->
+            <div class="mil-hero-img-frame" id="scroll">
+              <div class="mil-circle-text-frame mil-parallax-img" data-value-1="-60px" data-value-2="10px">
+                <a href="#scroll" class="mil-scroll-to mil-c-gone" data-no-swup>
+                  <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+                  <div id="lottie-personaje" style="
+                        width: 270px;
+                        height: 270px;
+                        transform: translate(-30px, -40px);
+                      "></div>
+
+                  <script>
+                    lottie.loadAnimation({
+                      container: document.getElementById("lottie-personaje"),
+                      renderer: "svg",
+                      loop: true,
+                      autoplay: true,
+                      path: "./anim/pet_index.json", // <- aquí pones el path al archivo .json exportado
+                    });
+                  </script>
+
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve"
+                    data-value="360" class="mil-rotate">
+                    <defs>
+                      <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                    </defs>
+                    <circle cx="150" cy="100" r="75" fill="none" />
+                  </svg>
+                </a>
+              </div>
+              
+              <div class="mil-hero-img mil-up">
+                <img src="img/home-1/1.jpg" alt="hero" class="mil-scale-img" data-value-1="1.25" data-value-2="1" />
+              </div>
+            </div>
+          </div>
+          <!-- hero end-->
+          <!-- about -->
+          <div class="mil-p-160-100">
+            <div class="container">
+              <div class="row mil-jcb">
+                <div class="col-12">
+                  <p class="mil-stylized mil-m2 mil-mb60 mil-up">
+                    Introducción
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h2 class="mil-head1 mil-mb60 mil-up">
+                    Descubre 🧪 <br />Alquimic <span class="mil-a2">pro</span>
+                  </h2>
+                </div>
+                <div class="col-lg-7">
+                  <p class="mil-text-md mil-mb60 mil-up">
+                    <span class="mil-a2">ALQUIMIC PRO</span> es una plataforma
+                    interactiva diseñada para facilitar el aprendizaje de la
+                    Química Orgánica a través del método ERCA
+                    (Explorar, Reflexionar, Conceptualizar y Aplicar).
+                  </p>
+                  <p class="mil-text-md mil-mb30 mil-up">
+                    Con videos, simulaciones y herramientas innovadoras,
+                    transformamos el aprendizaje en una experiencia dinámica y
+                    efectiva. ¡Explora, aprende y experimenta!
+                  </p>
+                </div>
+
+                <!-- objetivos -->
+                <div class="mil-objetivos">
+                  <div class="col-12">
+                    <p class="mil-stylized mil-m2 mil-mb60 mil-up">
+                      Objetivos
+                    </p>
+                  </div>
+
+                  <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="mil-title">
+                      🎯 Objetivos de
+                      <span class="mil-highlight">"Alquimic Pro"</span>
+                    </h2>
+                    <p class="mil-description">
+                      Proponer la Plataforma Digital Educativa
+                      <span class="mil-highlight">"Alquimic Pro"</span> como
+                      recurso didáctico interactivo para el aprendizaje de
+                      Química Orgánica con los estudiantes de sexto semestre
+                      de la Carrera de Pedagogía de las Ciencias
+                      Experimentales Química y Biología.
+                    </p>
+                  </div>
+
+                  <div class="row text-center mil-cards-container">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="mil-card mil-green">
+                        <h3><i class="fas fa-search"></i> Investigar</h3>
+                        <p>
+                          Importancia, características y beneficios de
+                          plataformas digitales para el aprendizaje de
+                          Hidrocarburos, Alcoholes, Fenoles y Éteres en
+                          Química Orgánica.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="mil-card mil-orange">
+                        <h3>
+                          <i class="fas fa-laptop-code"></i> Desarrollar
+                        </h3>
+                        <p>
+                          La plataforma educativa "Alquimic Pro" basada en el
+                          método ERCA, integrando RA, videos, juegos y otros
+                          recursos interactivos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="mil-card mil-black">
+                        <h3>
+                          <span class="mil-highlight"><i class="fas fa-bullhorn"></i> Presentar y
+                            difundir</span>
+                        </h3>
+                        <p>
+                          La plataforma
+                          <span class="mil-highlight">"Alquimic Pro"</span>
+                          como recurso didáctico para fortalecer el
+                          aprendizaje en Química Orgánica.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- about end -->
+          <!-- iconboxes -->
+          <div class="mil-mb30">
+            <div class="container">
+              <div class="row mil-jcc">
+                <div class="col-sm-8 col-lg-3">
+                  <div class="mil-iconbox mil-tac mil-mb60">
+                    <img src="img/home-1/iconbox/1.svg" alt="icon" class="mil-mb30 mil-up">
+                    <h4 class="mil-head3 mil-mb30 mil-up">Experiencia</h4>
+                    <p class="mil-text-md mil-shortened mil-up"> Se basa en una vivencia o acontecimiento relacionado al
+                      tema de estudio.</p>
+                  </div>
+                </div>
+                <div class="col-sm-8 col-lg-3">
+                  <div class="mil-iconbox mil-mb60">
+                    <img src="img/home-1/iconbox/2.svg" alt="icon" class="mil-mb30 mil-up">
+                    <h4 class="mil-head4 mil-mb30 mil-up">Reflexión</h4>
+                    <p class="mil-text-md mil-shortened mil-up">Implica la meditación e introspección sobre lo
+                      observado.</p>
+                  </div>
+                </div>
+                <div class="col-sm-8 col-lg-3">
+                  <div class="mil-iconbox mil-tac mil-mb60">
+                    <img src="img/home-1/iconbox/3.svg" alt="icon" class="mil-mb30 mil-up">
+                    <h4 class="mil-head4 mil-mb30 mil-up">Conceptualización</h4>
+                    <p class="mil-text-md mil-shortened mil-up">Consiste en la argumentación de lo experiencia con la
+                      reflexión.</p>
+                  </div>
+                </div>
+                <div class="col-sm-8 col-lg-3">
+                  <div class="mil-iconbox mil-tac mil-mb60">
+                    <img src="img/home-1/iconbox/4.svg" alt="icon" class="mil-mb30 mil-up">
+                    <h4 class="mil-head4 mil-mb30 mil-up">Aplicación</h4>
+                    <p class="mil-text-md mil-shortened mil-up">Consiste en poner en práctica lo previamente
+                      aprendido.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- iconboxes end -->
+          <div class="mil-mb30">
+            <div class="mil-mb30 col-lg-10 mx-auto text-center">
+                <h2 class="mil-title">Planificación de <span class="mil-highlight">"Alquimic Pro"</span></h2>
+
+                <div class="alquimic-container row justify-content-center">
+                  <div class="col-lg-6">
+                    <a href="./pdfs/Plan 1.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 1</a>
+                    <a href="./pdfs/Plan 2.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 2</a>
+                    <a href="./pdfs/Plan 3.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 3</a>
+                    <a href="./pdfs/Plan 4.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 4</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="./pdfs/Plan 5.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 5</a>
+                    <a href="./pdfs/Plan 6.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 6</a>
+                    <a href="./pdfs/Plan 7.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 7</a>
+                    <a href="./pdfs/Plan 8.pdf" target="_blank" rel="noopener" class="alquimic-btn">Plan 8</a>
+                  </div>
+                </div>
+              </div>
+          </div> 
+
+          <!-- Unidad 1 Titulo -->
+          <div class="mil-p-0-40">
+            <div class="container mil-relative">
+              <h2 class="mil-head1 mil-rubber mil-taс mil-up">Unidad <span class="mil-a1">1</span><span class="mil-a2"> :</span> </h2>
+              <br>
+
+              <p class="mil-description" style="text-align: justify;">
+                Comprender los fundamentos de la
+                <span class="mil-highlight">química orgánica, </span> reconociendo la importancia
+                del carbono como elemento central en la formación de compuestos, y analizar la
+                estructura, clasificación y propiedades de los hidrocarburos saturados, insaturados
+                y aromáticos mediante actividades basadas en el metodo ERCA (Exploración, Reflexión,
+                Conceptualización y Aplicación), que integren la construcción de modelos moleculares,
+                la nomenclatura y la propuesta de rutas sintéticas para la obtención de compuestos
+                de mayor complejidad.
+              </p>
+            </div>
+          </div>
+
+          <!-- Unidad 1  -->
+          <div class="accordion" id="accordionTemas">
+              <!-- Tema 1 -->
+              <div class="accordion-item" id="introduccion">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema1"
+                  aria-expanded="true" aria-controls="tema1">
+                  Tema 1: Fundamentos de la Química Orgánica
+                </button>
+              </h2>
+              <div id="tema1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionTemas" data-no-swup>
+                <div class="accordion-body">
+                  <div class="topic-wrapper">
+                    <a href="quimicaorganica.html" class="topic-card" style="background-image: url('img/enlases/img_1.jpg');">
+                      <div class="topic-overlay">
+                        <h3>⚗️ Introducción a la Química Orgánica</h3>
+                        <p>Explora el fascinante mundo del carbono.</p>
+                      </div>
+                    </a>
+
+                  </div>
+
+                    <!-- End Unidad 1 -->
+                  </div>
+                </div>
+              </div>
+              <!-- Tema 2 -->
+              <div class="accordion-item" id="alcanos">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema2"
+                    aria-expanded="true" aria-controls="tema2">
+                    Tema 2: Alcanos
+                  </button>
+                </h2>
+                <div id="tema2" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas" data-no-swup>
+                  <div class="accordion-body">
+                    <!-- TODO: aquí va tu contenido HTML completo de la unidad -->
+
+                  <div class="topic-wrapper">
+                    <a class="topic-card" href="/alcanos.html" style="background-image: url('/img/enlases/img_2.jpg');" data-no-swup>
+                      <div class="topic-overlay">
+                        <h3>⚗️ Alcanos</h3>
+                        <p>Explora los enlaces simples de la química orgánica.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Tema 3 -->
+              <div class="accordion-item" id="alquenos">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema3"
+                    aria-expanded="true" aria-controls="tema3">
+                    Tema 3: Alquenos
+                  </button>
+                </h2>
+                <div id="tema3" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas">
+                  <div class="accordion-body">
+                    <!-- TODO: aquí va tu contenido HTML completo de la unidad -->
+                  <div class="topic-wrapper">
+                    <a class="topic-card" href="/alquenos.html" style="background-image: url('img/Enlases/img_3.jpg');"data-no-swup>
+                      <div class="topic-overlay">
+                        <h3> Alquenos</h3>
+                        <p>Explora los enlaces dobles de la química orgánica.</p>
+                      </div>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tema 4 -->
+              <div class="accordion-item" id="alquinos">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema4"
+                    aria-expanded="true" aria-controls="tema4">
+                    Tema 4: Alquinos
+                  </button>
+                </h2>
+                <div id="tema4" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas">
+                  <div class="topic-wrapper">
+                    <a href="/alquinos.html" class="topic-card" style="background-image: url('img/Enlases/img_4.jpg');" data-no-swup>
+                      <div class="topic-overlay">
+                        <h3> Alquinos</h3>
+                        <p>Explora los enlaces triples de la química orgánica.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tema 5 -->
+              <div class="accordion-item" id="aromaticos">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema5"
+                    aria-expanded="true" aria-controls="tema5">
+                    Tema 5: Aromáticos
+                  </button>
+                </h2>
+                <div id="tema5" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas">
+                  <div class="topic-wrapper">
+                    <a href="/aromaticos.html" class="topic-card" style="background-image: url('img/Enlases/img_5.jpg');" data-no-swup>
+                      <div class="topic-overlay">
+                        <h3> Aromáticos</h3>
+                        <p>Explora el anillo aromático de la química orgánica.</p>
+                      </div>
+                    </a>
+                  </div>
+              </div>
+              </div> 
+              <br>
+              <br>
+              <!-- Unidad 2  -->
+              <div class="mil-p-0-40">
+                <div class="container mil-relative">
+                  
+                  <h2 class="mil-head1 mil-rubber mil-taс " style="text-align: center;">Unidad <span class="mil-a1">2</span><span class="mil-a2"> :</span> </h2>
+                  <br>
+
+                  <p class="mil-description" style="text-align: justify;">
+                    Analizar 
+                    <span class="mil-highlight">la estructura, propiedades físicas y químicas, y aplicaciones de los alcoholes, 
+                    </span>
+                    fenoles y éteres, mediante el uso de modelos moleculares, ejercicios de nomenclatura, y 
+                    el desarrollo de rutas sintéticas simples, aplicando el método ERCA para fortalecer la 
+                    comprensión de su importancia en procesos industriales, biológicos y en la vida cotidiana.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tema 6 -->
+              <div class="accordion-item" id="alcoholes">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema6"
+                    aria-expanded="true" aria-controls="tema6">
+                    Tema 6: Alcoholes
+                  </button>
+                </h2>
+                <div id="tema6" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas">
+                  <div class="topic-wrapper">
+                    <a href="/alcoholes.html" class="topic-card" style="background-image: url('img/Enlases/img_6.jpg');" data-no-swup>
+                      <div class="topic-overlay">
+                        <h3> Alcoholes</h3>
+                        <p>Explora el grupo hidroxilo de la química orgánica.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tema 7 -->
+              <div class="accordion-item" id="fenoles">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema7"
+                    aria-expanded="true" aria-controls="tema7">
+                    Tema 7: Fenoles
+                  </button>
+                </h2>
+                <div id="tema7" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas">
+                  <div class="topic-wrapper">
+                    <a href="/fenoles.html" class="topic-card" style="background-image: url('img/Enlases/img_7.jpg');" data-no-swup>
+                      <div class="topic-overlay">
+                        <h3> Fenoles</h3>
+                        <p>Explora la presencia del grupo hidroxilo unido al anillo de benceno.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tema 8 -->
+              <div class="accordion-item" id="eteres">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema8"
+                    aria-expanded="true" aria-controls="tema8">
+                    Tema 8: Eteres
+                  </button>
+                </h2>
+                <div id="tema8" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas">
+                  <div class="topic-wrapper">
+                    <a href="/eteres.html" class="topic-card" style="background-image: url('img/Enlases/img_8.jpg');" data-no-swup>
+                      <div class="topic-overlay">
+                        <h3> Eteres</h3>
+                        <p>Explora la presencia de un átomo de oxígeno entre dos grupos carbonados.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Bibliografía -->
+             <br><br>
+            <div class="Bibliografia container">
+              <h2 class="mil-head4 mil-rubber mil-taс " style="text-align: center;">Bibliografía <span class="mil-a1"></span><span class="mil-a2"> :</span> </h2>
+              
+             <div class="row">
+               <div class="col-lg-10 " style="text-align: justify;">
+                <p>
+                Brown, W. H., Poon, T., & Iverson, B. L. (2018). Organic Chemistry (8th ed.). Cengage Learning.<br>
+                Bruice, P. Y. (2017). Organic Chemistry (8th ed.). Pearson.<br>
+                Clayden, J., Greeves, N., & Warren, S. (2012). Organic Chemistry (2nd ed.). Oxford University Press.<br>
+                McMurry, J. (2021). Organic Chemistry (10th ed.). Cengage Learning.<br>
+                Morrison, R. T., & Boyd, R. N. (2014). Organic Chemistry (7th ed.). Pearson.<br>
+                Smith, J. G. (2020). Organic Chemistry (6th ed.). McGraw-Hill Education.<br>
+                Solomons, T. W. G., Fryhle, C. B., & Snyder, S. A. (2017). Organic Chemistry (12th ed.). Wiley.<br>
+                Vollhardt, K. P. C., & Schore, N. E. (2018). Organic Chemistry: Structure and Function (8th ed.). Macmillan.<br>
+                Wade, L. G. (2019). Organic Chemistry (9th ed.). Pearson<br>
+
+                Universidad Autónoma del Estado de Hidalgo. (2018). Propiedades físicas y químicas de alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                Universidad del País Vasco. (2015). Alcoholes (I) Estructura y síntesis. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                LibreTexts Español. (2021). 15.4: Preparación de Alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                LibreTexts Español. (2021). 6.6: Preparación de Alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br>
+
+                IUPAC. (2014). Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013 (Blue Book). Royal Society of Chemistry.<br>
+              </p>
+              </div>
+             </div>
+
+            </div>
+
+          <!-- footer -->
+          <footer class="mil-footer mil-p-160-160">
+            <div class="container">
+              <div class="row mil-no-g">
+                <div class="col-lg-12">
+                  <div class="mil-footer-bottom mil-up">
+                    <p class="mil-text-sm">©2025. All rights reserved.</p>
+                    <!-- <p class="mil-text-sm">Design by: <a
+                        href="https://themeforest.net/user/millerdigitaldesign/portfolio"
+                        class="mil-text-link mil-a2 mil-c-gone">Nazar Miller</a></p>
+                    <p class="mil-text-sm">Modify by: <a href="https://nachitogames.netlify.app/"
+                        class="mil-text-link mil-a2 mil-c-gone">NG Industry</a></p> -->
+                    <p class="mil-text-sm">Created by: <a href="https://nachitogames.netlify.app/"
+                        class="mil-text-link mil-a2 mil-c-gone">Alison Velastegui</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </footer>
+          <!-- footer end -->                              
+        </div>
+        <!-- content end -->
+
+      </div>
+    </div>
+    <!-- page transition -->
+
+  </div>
+  <!-- wrapper end -->
+
+
+
+
+  
+
+
+  <!-- Otros scripts -->
+  <script src="js/plugins/swup.min.js"></script>
+  <script src="js/plugins/gsap.min.js"></script>
+  <script src="js/plugins/ScrollSmoother.min.js"></script>
+  <script src="js/plugins/ScrollTrigger.min.js"></script>
+  <script src="js/plugins/ScrollTo.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/plugins/parallax.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <!-- Tu script separado -->
+  <script type="module" src="./db/script.js" defer></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Cargar fuentes y estilos -->
+  <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/plugins/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/style-friendly.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='16' cy='32' r='6' fill='%23FEAF62'/><circle cx='48' cy='32' r='6' fill='%23FEAF62'/><circle cx='32' cy='16' r='6' fill='%23FEAF62'/><line x1='22' y1='32' x2='42' y2='32' stroke='%23FEAF62' stroke-width='4'/><line x1='32' y1='22' x2='32' y2='10' stroke='%23FEAF62' stroke-width='4'/></svg>" />
+
+  <!-- Cargar AR -->
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@latest/dist/aframe-extras.min.js"></script>
+
+  <!-- Cargar Bootstrap y Swiper -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Título de la página -->
+  <title>Alquimic Pro</title>
+</head>
+
+
+<body>
+
+  <!-- wrapper -->
+  <div id="smooth-wrapper" class="mil-page-wrapper">
+
+    <div id="swup-opm"></div>
+
+    <!-- cursor -->
+    <div class="mil-cursor-follower"></div>
+    <!-- cursor end -->
+
+    <!-- preloader -->
+    <div class="mil-preloader">
+      <div class="mil-preloader-animation">
+        <div class="mil-pos-abs mil-animation-1">
+          <p class="mil-head1 mil-m1">Aprende</p>
+          <p class="mil-head1 mil-a2">Química</p>
+          <p class="mil-head1 mil-m1">Orgánica</p>
+        </div>
+        <div class="mil-pos-abs mil-animation-2">
+          <div class="mil-reveal-frame">
+            <p class="mil-reveal-box"></p>
+            <p class="mil-head1 mil-m1">AlquimicPro.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- scroll progress -->
+    <div class="mil-progress-track">
+      <div class="mil-progress"></div>
+    </div>
+    <!-- scroll progress end -->
+
+    <!-- fixed elements -->
+    <div class="mil-fixed">
+      <div class="mil-top-panel">
+        <div class="mil-left-side">
+          <a href="index.html" class="mil-logo mil-scroll-to" id="logoLink" >
+            <i class="fa-solid fa-flask-vial"></i>
+            <span>Alquimic Pro</span>
+          </a>
+
+        </div>
+        <div class="mil-buttons-tp-frame mil-c-gone">
+          <div class="mil-buttons">
+            <div class="mil-tp-btn">
+              <div class="mil-menu-btn"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mil-menu-frame">
+        <div class="mil-menu-window">
+          <div class="mil-menu-section mil-inner-scroll" id="swupMenu">
+            <ul class="mil-main-menu mil-c-gone">
+              <li class="mil-has-children">
+                <a href="#.">Unidad 1</a>
+                <ul>
+                  <li><a href="/quimicaorganica.html" class="" data-no-swup>Tema 1: Introdución a la Química Orgánica</a></li>
+                  <li><a href="/alcanos.html" class="" data-no-swup>Tema 2: Alcanos</a></li>
+                  <li><a href="/alquenos.html" class="" data-no-swup>Tema 3: Alquenos</a></li>
+                  <li><a href="/alquinos.html" class="" data-no-swup>Tema 4: Alquinos</a></li>
+                  <li><a href="/aromaticos.html" class="" data-no-swup>Tema 5: Aromáticos</a></li>
+                </ul>
+              </li>
+              <li class="mil-has-children">
+                <a href="#.">Unidad 2</a>
+                <ul>
+                  <li><a href="alcoholes.html" class="" data-no-swup>Tema 1: Alcoholes</a></li>
+                  <li><a href="fenoles.html" class="" data-no-swup>Tema 2: Fenoles</a></li>
+                  <li><a href="eteres.html" class="" data-no-swup>Tema 3: Eteres</a></li>
+                </ul>
+              </li>
+              <li class="mil-has-children">
+                <a href="#.">Realidad Aumentada</a>
+                <ul>
+                  <li><a href="hidrocarburos_AR.html">Introdución a la Química Orgánica</a></li>
+                  <li><a href="alcanos_AR.html">Alcanos</a></li>
+                  <li><a href="alquenos_AR.html">Alquenos</a></li>
+                  <li><a href="alquinos_AR.html">Alquinos</a></li>
+                  <li><a href="aromaticos_AR.html">Aromaticos</a></li>
+                  <li><a href="alcoholes_AR.html">Alcoholes</a></li>
+                  <li><a href="fenoles_AR.html">Fenoles</a></li>
+                  <li><a href="eteres_AR.html">Eteres</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- fixed elements end -->
+
+    <!-- page transition -->
+    <div class="mil-transition-fade" id="swup">
+      <div class="mil-transition-frame">
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+
+          <!-- Sección hero de Alcoholes -->
+          <section class="hero-alcanos">
+            <div class="hero-content">
+              <h2 class="mil-head1 mil-rubber mil-taс"><i class="fas fa-flask" style="color: #000;"></i> CONOCE LOS FENOLES</h2>
+              <p class="mil-a3">Moléculas aromáticas con grupo hidroxilo: únicas en estructura y función.</p>
+
+            </div>
+          </section>
+
+          <!-- Unidad 1  -->
+          <div class="accordion" id="accordionTemas">
+              <!-- Tema 7 -->
+              <div class="accordion-item" id="fenoles">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema7"
+                    aria-expanded="true" aria-controls="tema7">
+                    Tema 7: Fenoles
+                  </button>
+                </h2>
+                <div id="tema7" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionTemas">
+                  <div class="accordion-body">
+                    <!-- TODO: aquí va tu contenido HTML completo de la unidad -->
+                    <!-- Tema 7 -->
+                    <div class="unit">
+                      <div class="panel">
+
+                        <!-- Experiencia museo-alquimic -->
+                        <div class="mil-p-0-40">
+                          <h2 class="mil-head1 mil-rubber mil-taс titulo-temas"><span class="mil-a1">Experiencia </span><i class="fa-solid fa-chart-simple"></i></h2>
+                        </div>
+                        <div class="museo-alquimic">
+                          <div class="responsive-iframe">
+                            <iframe 
+                              src="https://app.emaze.com/@ALFIIZZFT/sabas-que-algo-tan-pequeo-como-una-molcula-puede-ser" 
+                              frameborder="0" 
+                              allowfullscreen 
+                              webkitallowfullscreen 
+                              mozallowfullscreen 
+                              seamless>
+                            </iframe>
+                          </div>
+                          <a href="https://www.emaze.com" target="_blank">
+                            <img src="//resources.emaze.com/mypres/css/images/embed.png" alt="Powered by emaze">
+                          </a>
+                        </div>
+
+
+
+                        <!-- AR y Foro -->
+                        <div class="mil-p-0-40">
+                          <h2 class="mil-head1 mil-rubber mil-taс titulo-temas"><span class="mil-a1">Reflexión </span><i class="fa-solid fa-chart-simple"></i></h2>
+                        </div>
+
+                        <div class="mil-p-0-160">
+                          <div class="container">
+                            <div class="row mil-jcc mil-aic">
+
+                              <div class="col-lg-5 mil-p-0-40">
+                                <img src="./img/guide/guideRA.jpg" alt="guideRA" class="img-guide">
+                              </div>
+                              <div class="col-lg-5">
+                                <p class="mil-text-md mil-m1 mil-mb60 ">
+                                  <span class="mil-a2">👣 ¿Qué vas a hacer?
+                                  </span>
+                                  Activa la simulación en RA y apunta tu dispositivo móvil hacia la imagen que podrás 
+                                  descargar debajo. Verás cómo aparece una molécula flotante en 3D frente a ti. Gírala, 
+                                  acércate, obsérvala desde todos los ángulos… y presta mucha atención, porque escucharás 
+                                  una adivinanza que te dará pistas sobre su identidad:
+                                </p>
+                                <div class="">
+                                  <a href="pdfs/Tag_AlquimicPro.pdf" download style="text-decoration: underline; color: #f00c0c;">
+                                    Descargar marcador Realidad Aumentada (PDF)</div>
+                                <br>
+                                <br>
+                                <div class="titulo-responsive">
+                                  <a href="fenoles_AR.html" target="_blank" class="mil-btn mil-btn-border mil-m1 mil-c-gone">Abrir Realidad Aumentada</a>
+                                </div>
+                                <div>
+                                <a href="pdfs/Cubo interactivo .pdf" download style=" text-decoration: underline; color: #0c82f0;">
+                                  Descargar Cubo Interactivo (PDF)</a>
+                                </div>
+                                <br />
+                                <p class="mil-text-md mil-m1 mil-mb60 ">
+                                  Participa en la sigueinte actividad respondiendo a las siguientes preguntas:<br />
+                                  <span class="mil-a2">1.-</span>¿De qué compuesto orgánico se habló en la adivinanza?<br />
+                                  <span class="mil-a2">2.-</span>¿Cuál es la diferencia entre el compuesto descrito y un alcohol?<br />
+                                  <span class="mil-a2">3.-</span>¿Qué grupo funcional caracteriza a estos compuestos?<br />
+                                  <span class="mil-a2">4.-</span>¿Qué propiedades ácidas tienen en comparación con los alcoholes?<br /> 
+                                  <span class="mil-a2">5.-</span>¿En qué productos o procesos industriales se utilizan?<br />                                
+                                </p>
+                              </div>                                                                      
+                              <!-- Actividad AR: Fenoles -->
+                              <div style="max-width: 800px; margin: auto;">
+                                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                                  <iframe 
+                                    title="Fenoles"
+                                    src="https://view.genially.com/680c59565263f27eb00871a0"
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"
+                                    allowfullscreen
+                                    allowscriptaccess="always"
+                                    scrolling="yes"
+                                    allownetworking="all">
+                                  </iframe>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </div> 
+                        <!-- Conceptualización Fenoles -->
+                        <div class="mil-p-0-40">
+                          <h2 class="mil-head1 mil-rubber mil-taс titulo-temas"><span class="mil-a1">Conceptualización</span><i class="fa-solid fa-eye"></i></h2>
+
+                          <div class="presentacion-canva">
+                            <iframe loading="lazy"
+                                    src="https://www.canva.com/design/DAGnSwbkuIU/kjUvPt6Ekjg3gmcogE6cTg/view?embed"
+                                    allowfullscreen
+                                    allow="fullscreen"
+                                    title="Presentación Fenoles de Alisson Yamile Velastegui">
+                            </iframe>
+                          </div>
+
+                          <a href="https://www.canva.com/design/DAGnSwbkuIU/kjUvPt6Ekjg3gmcogE6cTg/view?utm_content=DAGnSwbkuIU&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+                            target="_blank" rel="noopener">
+                            Fenoles de Alisson Yamile Velastegui
+                          </a>
+                        </div>
+
+                        <div class="mil-p-0-40">
+                          <h2 class="mil-head1 mil-rubber mil-taс titulo-temas" ><span class="mil-a1">Aplicación</span><span class="mil-a2"><i class="fa-solid fa-eye"></i></span></h2>
+                          <iframe src="https://learningapps.org/watch?v=pfgy5vvoc25" style="border:0px;width:100%;height:500px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                        </div> 
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Bibliografía -->
+             <br><br>
+            <div class="Bibliografia container">
+              <h2 class="mil-head4 mil-rubber mil-taс " style="text-align: center;">Bibliografía <span class="mil-a1"></span><span class="mil-a2"> :</span> </h2>
+              
+             <div class="row">
+               <div class="col-lg-10 " style="text-align: justify;">
+                <p>
+                Brown, W. H., Poon, T., & Iverson, B. L. (2018). Organic Chemistry (8th ed.). Cengage Learning.<br>
+                Bruice, P. Y. (2017). Organic Chemistry (8th ed.). Pearson.<br>
+                Clayden, J., Greeves, N., & Warren, S. (2012). Organic Chemistry (2nd ed.). Oxford University Press.<br>
+                McMurry, J. (2021). Organic Chemistry (10th ed.). Cengage Learning.<br>
+                Morrison, R. T., & Boyd, R. N. (2014). Organic Chemistry (7th ed.). Pearson.<br>
+                Smith, J. G. (2020). Organic Chemistry (6th ed.). McGraw-Hill Education.<br>
+                Solomons, T. W. G., Fryhle, C. B., & Snyder, S. A. (2017). Organic Chemistry (12th ed.). Wiley.<br>
+                Vollhardt, K. P. C., & Schore, N. E. (2018). Organic Chemistry: Structure and Function (8th ed.). Macmillan.<br>
+                Wade, L. G. (2019). Organic Chemistry (9th ed.). Pearson<br>
+
+                Universidad Autónoma del Estado de Hidalgo. (2018). Propiedades físicas y químicas de alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                Universidad del País Vasco. (2015). Alcoholes (I) Estructura y síntesis. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                LibreTexts Español. (2021). 15.4: Preparación de Alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                LibreTexts Español. (2021). 6.6: Preparación de Alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br>
+
+                IUPAC. (2014). Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013 (Blue Book). Royal Society of Chemistry.<br>
+              </p>
+              </div>
+             </div>
+
+            </div>
+
+          <!-- footer -->
+          <footer class="mil-footer mil-p-160-160">
+            <div class="container">
+              <div class="row mil-no-g">
+                <div class="col-lg-12">
+                  <div class="mil-footer-bottom mil-up">
+                    <p class="mil-text-sm">©2025. All rights reserved.</p>
+                    <!-- <p class="mil-text-sm">Design by: <a
+                        href="https://themeforest.net/user/millerdigitaldesign/portfolio"
+                        class="mil-text-link mil-a2 mil-c-gone">Nazar Miller</a></p>
+                    <p class="mil-text-sm">Modify by: <a href="https://nachitogames.netlify.app/"
+                        class="mil-text-link mil-a2 mil-c-gone">NG Industry</a></p> -->
+                    <p class="mil-text-sm">Created by: <a href="https://nachitogames.netlify.app/"
+                        class="mil-text-link mil-a2 mil-c-gone">Alison Velastegui</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </footer>
+          <!-- footer end -->                                
+        </div>
+        <!-- content end -->
+
+      </div>
+    </div>
+    <!-- page transition -->
+
+  </div>
+  <!-- wrapper end -->
+
+
+
+
+  
+
+
+  <!-- Otros scripts -->
+  <script src="js/plugins/swup.min.js"></script>
+  <script src="js/plugins/gsap.min.js"></script>
+  <script src="js/plugins/ScrollSmoother.min.js"></script>
+  <script src="js/plugins/ScrollTrigger.min.js"></script>
+  <script src="js/plugins/ScrollTo.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/plugins/parallax.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <!-- Tu script separado -->
+  <script type="module" src="./db/script.js" defer></script>
+  
+
+</body>
+
+</html>

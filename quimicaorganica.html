@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Cargar fuentes y estilos -->
+  <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/plugins/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/style-friendly.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='16' cy='32' r='6' fill='%23FEAF62'/><circle cx='48' cy='32' r='6' fill='%23FEAF62'/><circle cx='32' cy='16' r='6' fill='%23FEAF62'/><line x1='22' y1='32' x2='42' y2='32' stroke='%23FEAF62' stroke-width='4'/><line x1='32' y1='22' x2='32' y2='10' stroke='%23FEAF62' stroke-width='4'/></svg>" />
+
+  <!-- Cargar AR -->
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@latest/dist/aframe-extras.min.js"></script>
+
+  <!-- Cargar Bootstrap y Swiper -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Título de la página -->
+  <title>Alquimic Pro</title>
+</head>
+
+
+<body>
+
+  <!-- wrapper -->
+  <div id="smooth-wrapper" class="mil-page-wrapper">
+
+    <div id="swup-opm"></div>
+
+    <!-- cursor -->
+    <div class="mil-cursor-follower"></div>
+    <!-- cursor end -->
+
+    <!-- preloader -->
+    <div class="mil-preloader">
+      <div class="mil-preloader-animation">
+        <div class="mil-pos-abs mil-animation-1">
+          <p class="mil-head1 mil-m1">Aprende</p>
+          <p class="mil-head1 mil-a2">Química</p>
+          <p class="mil-head1 mil-m1">Orgánica</p>
+        </div>
+        <div class="mil-pos-abs mil-animation-2">
+          <div class="mil-reveal-frame">
+            <p class="mil-reveal-box"></p>
+            <p class="mil-head1 mil-m1">AlquimicPro.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- scroll progress -->
+    <div class="mil-progress-track">
+      <div class="mil-progress"></div>
+    </div>
+    <!-- scroll progress end -->
+
+    <!-- fixed elements -->
+    <div class="mil-fixed">
+      <div class="mil-top-panel">
+        <div class="mil-left-side">
+          <a href="index.html" class="mil-logo mil-scroll-to" id="logoLink" >
+            <i class="fa-solid fa-flask-vial"></i>
+            <span>Alquimic Pro</span>
+          </a>
+
+        </div>
+        <div class="mil-buttons-tp-frame mil-c-gone">
+          <div class="mil-buttons">
+            <div class="mil-tp-btn">
+              <div class="mil-menu-btn"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mil-menu-frame">
+        <div class="mil-menu-window">
+          <div class="mil-menu-section mil-inner-scroll" id="swupMenu">
+            <ul class="mil-main-menu mil-c-gone">
+              <li class="mil-has-children">
+                <a href="#.">Unidad 1</a>
+                <ul>
+                  <li><a href="/quimicaorganica.html" class="" data-no-swup>Tema 1: Introdución a la Química Orgánica</a></li>
+                  <li><a href="/alcanos.html" class="" data-no-swup>Tema 2: Alcanos</a></li>
+                  <li><a href="/alquenos.html" class="" data-no-swup>Tema 3: Alquenos</a></li>
+                  <li><a href="/alquinos.html" class="" data-no-swup>Tema 4: Alquinos</a></li>
+                  <li><a href="/aromaticos.html" class="" data-no-swup>Tema 5: Aromáticos</a></li>
+                </ul>
+              </li>
+              <li class="mil-has-children">
+                <a href="#.">Unidad 2</a>
+                <ul>
+                  <li><a href="alcoholes.html" class="" data-no-swup>Tema 1: Alcoholes</a></li>
+                  <li><a href="fenoles.html" class="" data-no-swup>Tema 2: Fenoles</a></li>
+                  <li><a href="eteres.html" class="" data-no-swup>Tema 3: Eteres</a></li>
+                </ul>
+              </li>
+              <li class="mil-has-children">
+                <a href="#.">Realidad Aumentada</a>
+                <ul>
+                  <li><a href="hidrocarburos_AR.html">Introdución a la Química Orgánica</a></li>
+                  <li><a href="alcanos_AR.html">Alcanos</a></li>
+                  <li><a href="alquenos_AR.html">Alquenos</a></li>
+                  <li><a href="alquinos_AR.html">Alquinos</a></li>
+                  <li><a href="aromaticos_AR.html">Aromaticos</a></li>
+                  <li><a href="alcoholes_AR.html">Alcoholes</a></li>
+                  <li><a href="fenoles_AR.html">Fenoles</a></li>
+                  <li><a href="eteres_AR.html">Eteres</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- fixed elements end -->
+
+    <!-- page transition -->
+    <div class="mil-transition-fade" id="swup">
+      <div class="mil-transition-frame">
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+          
+          <!-- Sección hero de Introduccion -->
+          <section class="hero-alcanos">
+            <div class="hero-content">
+              <h2 class="mil-head1 mil-rubber mil-taс">⚗️ INTRODUCCIÓN a la <span class="" style="color: black;">QUÍMICA ORGANICA</span></h2>
+              <p class="mil-a3">Donde todo comienza: estructuras simples, impacto grande.</p>
+            </div>
+          </section>
+
+          <!-- Unidad 1  -->
+          <div class="accordion" id="accordionTemas">
+              <!-- Tema 1 -->
+              <div class="accordion-item" id="introduccion">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tema1"
+                  aria-expanded="true" aria-controls="tema1">
+                  Tema 1: Fundamentos de la Química Orgánica
+                </button>
+              </h2>
+              <div id="tema1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionTemas" data-no-swup>
+                <div class="accordion-body">
+                  <!-- TODO: aquí va tu contenido HTML completo de la unidad -->
+
+                  <div class="unit">
+                    <div class="panel">
+                      <!-- Poster y TikTok -->
+                      <div class="mil-p-tiktok-bg">
+                        <h2 class="mil-head1 mil-rubber mil-taс titulo-temas" ><span class="mil-a1">Experiencia</span><span class="mil-a2"><i class="fa-solid fa-eye"></i></span></h2>
+                        <div class="mil-p-0-40">
+                          <div class="container">
+                            <div class="row mil-jcb">
+
+                              <!-- Columna Imagen y link -->
+                              <div class="col-lg-6 d-flex flex-column align-items-center gap-3">
+                                <div class="gallery-proportional">
+                                  <img src="img/team/poster_1.jpg" alt="Imagen 1" class="gallery-item">
+                                </div>
+                                <a href="https://www.canva.com/design/DAGfsGyaTa0/ug8xlZzrzwVdpF1ejmoDig/edit?utm_content=DAGfsGyaTa0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"                                  
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                style=" text-decoration: underline;">
+                                  Ir al poster</a>
+                              </div>
+
+
+                              <!-- Columna TikTok -->
+                              <div class="col-lg-6">
+                                <div class="tiktok-wrapper">
+                                  <blockquote class="tiktok-embed"
+                                    cite="https://www.tiktok.com/@alquimicpro/video/7490695699789581573"
+                                    data-video-id="7490695699789581573" style="max-width: 605px; min-width: 325px;">
+                                    <section>
+                                      <a target="_blank" title="@alquimicpro"
+                                        href="https://www.tiktok.com/@alquimicpro?refer=embed">@alquimicpro</a>
+                                      Tema 1: Hidrocarburos
+                                      <a title="quimicaorganica" target="_blank"
+                                        href="https://www.tiktok.com/tag/quimicaorganica?refer=embed">#quimicaorganica</a>
+                                      <a title="educacion" target="_blank"
+                                        href="https://www.tiktok.com/tag/educacion?refer=embed">#educacion</a>
+                                      <a title="divertido" target="_blank"
+                                        href="https://www.tiktok.com/tag/divertido?refer=embed">#divertido</a>
+                                      <a target="_blank" title="♬ sonido original alquimicpro"
+                                        href="https://www.tiktok.com/music/sonido-original-alquimicpro-0?refer=embed">
+                                        ♬ sonido original alquimicpro
+                                      </a>
+                                    </section>
+                                  </blockquote>
+                                  <script async src="https://www.tiktok.com/embed.js"></script>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- AR y Foro -->
+                      <div class="mil-p-0-40">
+                        <h2 class="mil-head1 mil-rubber mil-taс titulo-temas"><span class="mil-a1">Reflexión </span><i class="fa-solid fa-chart-simple"></i></h2>
+                      </div>
+
+                      <div class="mil-p-0-160">
+                        <div class="container">
+                          <div class="row mil-jcc mil-aic">
+
+                            <div class="col-lg-5 mil-p-0-40">
+                              <img src="./img/guide/guideRA.jpg" alt="guideRA" class="img-guide">
+                            </div>
+
+                            <div class="col-lg-5">
+                              <p class="mil-text-md mil-m1 mil-mb60 ">
+                                <span class="mil-a2">👣 ¿Qué vas a hacer?
+                                </span>
+                                En esta experiencia de realidad aumentada vas
+                                a observar tres estructuras moleculares
+                                diferentes que representan los tipos de
+                                hibridación del carbono: sp, sp² y sp³. A
+                                partir de esta observación responderás
+                                preguntas en el foro para consolidar tu
+                                comprensión.
+                              </p>
+                              <div >
+                                <a href="pdfs/Tag_AlquimicPro.pdf" download style=" text-decoration: underline; color: #f00c0c;">
+                                  Descargar marcador Realidad Aumentada (PDF)</a>
+                              </div>
+                              <br>
+                              <br>
+                              <div class="titulo-responsive">
+                                <a href="hidrocarburos_AR.html" target="_blank"
+                                  class="mil-btn mil-btn-border mil-m1 mil-c-gone">Abrir Realidad Aumentada</a>
+                              </div>
+                              <div >
+                                <a href="pdfs/Cubo interactivo .pdf" download style=" text-decoration: underline; color: #0c82f0;">
+                                  Descargar Cubo Interactivo (PDF)</a>
+                              </div>
+                              <br />
+                              <p class="mil-text-md mil-m1 mil-mb60 ">
+                                Participa en la sigueinte actividad respondiendo a las siguientes preguntas:<br />
+                                <span class="mil-a2">1.-</span>¿Qué estructura tenía ángulos de
+                                  aproximadamente 120°? <br />
+                                <span class="mil-a2">2.-</span>¿Qué tipo de hibridación permite la
+                                  formación de enlaces triples? <br />
+                                <span class="mil-a2">3.-</span>¿Qué tipo de enlace tiene los ángulos de
+                                  109.5°? <br />
+                                <span class="mil-a2">4.-</span>¿Cuál de las tres estructuras tiene una
+                                  forma tetraédrica? Estructura de color
+                                  Morado, verde, Azul. <br />                                
+                              </p>
+                            </div>
+                            
+
+                            <!-- Foro: Hidrocarburos -->
+                            <div class="container">
+                              <div class="forum-container">
+                                <div class="forum-content">
+                                  <div class="forum-form-container">
+                                    <h2 class="forum-title">Comentarios: <span class="highlight">Fundamentos de la Química Orgánica</span></h2>
+                                    <form id="commentForm-hidrocarburos" class="forum-form" data-collection="comentarios-hidrocarburos">
+                                      <input type="text" class="input-field userName" placeholder="Escribe tu Nombre o usuario" required />
+                                      <textarea class="input-field userComment" placeholder="Escribe tu comentario" required></textarea>
+                                      <button type="submit" class="submit-btn">Publicar</button>
+                                    </form>
+                                  </div>
+                                  <div class="comment-section">
+                                    <div class="commentContainer comment-container"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Contenedor del carrusel -->
+                      <div class="mil-p-0-40">
+                        <h2 class="mil-head1 mil-rubber mil-taс titulo-temas"><span class="mil-a1">Conceptualización </span><i class="fa-solid fa-eye"></i></h2>
+                      </div>
+                        <br />
+                        <br />
+
+                        <!-- Contenedor del video Youtube -->
+                        <h2 class="mil-head4 mil-rubber mil-taс" style="text-align: center;">Video <span class="mil-a1"></span><span class="mil-a2">Educativo</span></h2>
+                        <div class="video-container">
+                          <iframe src="https://www.youtube.com/embed/6efngxZsZs8?si=vFuzFdcJXNNGiX0x"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                          </iframe>
+                        </div>
+
+                        <br />
+                        <br />
+                        <!-- Enlaces Referencias -->
+                        <h2 class="mil-head4 mil-rubber mil-taс" style="text-align: center;">Referencias <span class="mil-a1"></span><span class="mil-a2">Bibliograficas</span></h2>
+                        <p class="" style="text-align: center;">
+                          <a href="https://quimicaeo11.files.wordpress.com/2012/04/formulacion_quimica_organica_basica.pdf" target="_blank" rel="noopener noreferrer" download class="download-link" style="text-align: center;">Introducción a la Química orgánica/quimicaeo11</a><br>
+                          <a href="http://sedici.unlp.edu.ar/bitstream/handle/10915/31664/Documento_completo__.pdf?sequence=1" target="_blank" rel="noopener noreferrer" download class="download-link" style="text-align: center;">Introducción a la Química Orgánica/FACULTAD DE CIENCIAS AGRARIAS Y FORESTALES/Juan Carlos Autino, Gustavo Romanelli, Diego Manuel Ruiz</a><br>
+                          <a href="https://fcen.uncuyo.edu.ar/catedras/john-mcmurry-quimica-organica-2008-cengage-learning.pdf" target="_blank" rel="noopener noreferrer" download class="download-link" style="text-align: center;">Quimica-Organica-2008/John Mcmurry</a><br>
+                        </p>
+
+
+                        <div class="mil-p-0-40">
+                          <h2 class="mil-head1 mil-rubber mil-taс titulo-temas"><span class="mil-a1">Aplicación </span><i class="fa-solid fa-eye"></i></h2>
+                        </div>
+
+                        <!-- Juego -->
+                        <div class="genially-container">
+                          <iframe title="QUIZ Bolera - Fundamentos de Química"
+                            src="https://view.genially.com/67fad42024901b28c5ee38d2" frameborder="0" allowfullscreen
+                            scrolling="yes" allowscriptaccess="always" allownetworking="all">
+                          </iframe>
+                        </div>
+                        <br>
+                        <br>
+
+                        <!-- Contenedor de taller -->
+                        <div class="worksheet-container">
+                          <div id="liveworksheet8071550" style="width: 100%">
+                            <span id="lwslink8071550">
+                              <a href="https://www.liveworksheets.com/w/es/quimica-organica/8071550">
+                                Taller - Fundamentos de la química orgánica y el
+                                estudio del átomo de carbono </a>, una hoja interactiva por
+                              <a href="https://www.liveworksheets.com/u/alquimicpro">Alisson Velastegui</a><br />
+                              <a href="https://www.liveworksheets.com">live<b>worksheets.com</b></a>
+                            </span>
+                          </div>
+
+                          <script src="https://www.liveworksheets.com/embed/embed.js?v=1"></script>
+                          <script>
+                            loadliveworksheet(8071550, "jr5s", 1550, "www", "new");
+                          </script>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- End Unidad 1 -->
+                  </div>
+                </div>
+              </div>
+
+
+
+            <!-- Bibliografía -->
+             <br><br>
+            <div class="Bibliografia container">
+              <h2 class="mil-head4 mil-rubber mil-taс " style="text-align: center;">Bibliografía <span class="mil-a1"></span><span class="mil-a2"> :</span> </h2>
+              
+             <div class="row">
+               <div class="col-lg-10 " style="text-align: justify;">
+                <p>
+                Brown, W. H., Poon, T., & Iverson, B. L. (2018). Organic Chemistry (8th ed.). Cengage Learning.<br>
+                Bruice, P. Y. (2017). Organic Chemistry (8th ed.). Pearson.<br>
+                Clayden, J., Greeves, N., & Warren, S. (2012). Organic Chemistry (2nd ed.). Oxford University Press.<br>
+                McMurry, J. (2021). Organic Chemistry (10th ed.). Cengage Learning.<br>
+                Morrison, R. T., & Boyd, R. N. (2014). Organic Chemistry (7th ed.). Pearson.<br>
+                Smith, J. G. (2020). Organic Chemistry (6th ed.). McGraw-Hill Education.<br>
+                Solomons, T. W. G., Fryhle, C. B., & Snyder, S. A. (2017). Organic Chemistry (12th ed.). Wiley.<br>
+                Vollhardt, K. P. C., & Schore, N. E. (2018). Organic Chemistry: Structure and Function (8th ed.). Macmillan.<br>
+                Wade, L. G. (2019). Organic Chemistry (9th ed.). Pearson<br>
+
+                Universidad Autónoma del Estado de Hidalgo. (2018). Propiedades físicas y químicas de alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                Universidad del País Vasco. (2015). Alcoholes (I) Estructura y síntesis. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                LibreTexts Español. (2021). 15.4: Preparación de Alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br> 
+                LibreTexts Español. (2021). 6.6: Preparación de Alcoholes. Recuperado de Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada massa semper, pharetra enim malesuada, feugiat lectus. Sed nec nunc sollicitudin, porta nibh at, rutrum sapien.<br>
+
+                IUPAC. (2014). Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013 (Blue Book). Royal Society of Chemistry.<br>
+              </p>
+              </div>
+             </div>
+
+            </div>
+
+          <!-- footer -->
+          <footer class="mil-footer mil-p-160-160">
+            <div class="container">
+              <div class="row mil-no-g">
+                <div class="col-lg-12">
+                  <div class="mil-footer-bottom mil-up">
+                    <p class="mil-text-sm">©2025. All rights reserved.</p>
+                    <!-- <p class="mil-text-sm">Design by: <a
+                        href="https://themeforest.net/user/millerdigitaldesign/portfolio"
+                        class="mil-text-link mil-a2 mil-c-gone">Nazar Miller</a></p>
+                    <p class="mil-text-sm">Modify by: <a href="https://nachitogames.netlify.app/"
+                        class="mil-text-link mil-a2 mil-c-gone">NG Industry</a></p> -->
+                    <p class="mil-text-sm">Created by: <a href="https://nachitogames.netlify.app/"
+                        class="mil-text-link mil-a2 mil-c-gone">Alison Velastegui</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </footer>
+          <!-- footer end -->                                
+        </div>
+        <!-- content end -->
+
+      </div>
+    </div>
+    <!-- page transition -->
+
+  </div>
+  <!-- wrapper end -->
+
+
+
+
+  
+
+
+  <!-- Otros scripts -->
+  <script src="js/plugins/swup.min.js"></script>
+  <script src="js/plugins/gsap.min.js"></script>
+  <script src="js/plugins/ScrollSmoother.min.js"></script>
+  <script src="js/plugins/ScrollTrigger.min.js"></script>
+  <script src="js/plugins/ScrollTo.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/plugins/parallax.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <!-- Tu script separado -->
+  <script type="module" src="./db/script.js" defer></script>
+  
+
+</body>
+
+</html>
